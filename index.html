@@ -7,40 +7,40 @@
     <title>Formulaire</title>
 </head>
 <body>
-    <p>Me contacter</p>
-<form method="POST" action="taitement.php">
-    <p><label for="Nom">Nom</label> <input type="text" name="Nom" id="Nom" placeholder="Quel est votre nom?"/></p>
-    <p><label for="Postnom">Postnom</label> <input type="text" name="Postnom" id="Postnom" placeholder="Quel est votre postnom?"/></p>
-    <p> <label for="Prénom">Prénom</label> <input type="text" name="Prénom" id="Prénom" placeholder="Quel est votre prenom?"/></p>
+<h1>Me contacter</h1>
+<form>
+    <p><label for="nom">Nom</label> <input type="text" id="nom" placeholder="Quel est votre nom?"/></p>
+    <p><label for="postnom">Postnom</label> <input type="text" id="postnom" placeholder="Quel est votre postnom?"/></p>
+    <p><label for="prenom">Prénom</label> <input type="text" id="prenom" placeholder="Quel est votre prenom?"/></p>
     <p>Genre</p>
-    <label for="Homme">Homme</label><input type="radio" name="Genre" id="Homme"/>
-    <label for="Femme">Femme</label><input type="radio" name="Genre" id="Femme">
+    <label for="sex">Homme</label><input type="radio" name="sex" id="sex"/>
+    <label for="sex">Femme</label><input type="radio" name="sex" id="sex"/>
     <p>Message</p><textarea name="Message" id="Message" cols="30" rows="10"></textarea>
     <p>
-        Photo <br>
-    <label for="file"></label> <input type="file" name="file" id="file"/>
+        Photo<br>
+    <label for="file"></label><input type="file" id="file"/>
     </p>
     <p>
-        <input type="checkbox" name="choix"/><label for="Vous etes étudiant">Vous etes étudiant</label><br>
-        <input type="checkbox" name="choix"/><label for="Vous etes majeur">Vous etes majeur</label>
+        <input type="checkbox" id="vous etes etudiant "/><label for="vous etes etudiant">Vous etes étudiant</label><br>
+        <input type="checkbox" id="vous etes majeur" /><label for="vous etes majeur">Vous etes majeur</label>
     </p>
     <p>
         Date de naissance<br>
-        <input type="date" name="date"/>
+        <input type="date"/>
     </p>
     <p>
         Temps d'arriver<br>
-        <input type="time" name="time"/>
+        <input type="time"/>
     </p>
     <p>
-        <label for="faculté">Selectionner une faculté</label><br>
-        <select name="faculté" id="faculté">
+        <label for="faculte">Selectionner une faculté</label><br>
+        <select  id="faculte">
             <option value="Mathematique informatique">Mathematique informatique</option>
         </select>
     </p>
     <p>
          <label for="pass">Mot de passe</label><br>
-         <input type="password" name="pass" id="pass"/>
+         <input type="password" id="pass"/>
     </p>
     <p>
         <input type="submit" value="Enregistrez"/>
