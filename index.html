@@ -1,51 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulaire</title>
-</head>
-<body>  
-        <h1>Me contacter</h1>
-    <form>
-        <p><label for="nom">Nom</label> <input type="text" id="nom" placeholder="Quel est votre nom?"/></p>
-        <p><label for="postnom">Postnom</label> <input type="text" id="postnom" placeholder="Quel est votre postnom?"/></p>
-        <p><label for="prenom">Prénom</label> <input type="text" id="prenom" placeholder="Quel est votre prenom?"/></p>
-        <p>Genre</p>
-            <label for="homme">Homme</label><input type="radio" id="homme" name="genre"/>
-            <label for="femme">Femme</label><input type="radio" id="femme" name="genre"/>
-        <p>Message</p><textarea name="message" id="message" cols="30" rows="10"></textarea>
-        <p>
-            Photo<br>
-            <label for="file"></label><input type="file" id="file"/>
-        </p>
-        <p>
-            <input type="checkbox" id="etudiant"/><label for="etudiant">Vous etes étudiant</label><br>
-            <input type="checkbox" id="majeur"/><label for="majeur">Vous etes majeur</label>
-        </p>
-        <p>
-            <label for="naissance">Date de naissance<br></label> <input type="date" id="naissance"/>
-        </p>
-        <p>
-            <label for="temps">Temps d'arriver<br></label> <input type="time" id="temps"/>
-       </p>
-       <p>
-            <label for="faculte">Selectionner une faculté</label><br>
-            <select  id="faculte">
-                <option value="Math_info">Mathematique informatique</option>
-            </select>
-        </p>
-        <p>
-            <label for="pass">Mot de passe</label><br>
-            <input type="password" id="pass"/>
-        </p>
-        <p> 
-            <input type="submit" value="Enregistrez"/>
-            <input type="reset" value="reinitialiser">
-    
-        </p>
-        <a href="#">voir page2</a>
-    </form>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulaire</title>
+    </head>
+    <body>
+        <div><h1>Me contacter</h1></div>
+        <div>
+            <form>
+                <div>
+                    <p><label for="nom">Nom</label> <input type="text" id="nom" placeholder="Quel est votre nom?"/></p>
+                    <p><label for="postnom">Postnom</label> <input type="text" id="postnom" placeholder="Quel est votre postnom?"/></p>
+                    <p><label for="prenom">Prénom</label> <input type="text" id="prenom" placeholder="Quel est votre prenom?"/></p>
+                </div>
+                <div>
+                    <p>Genre</p>
+                    <label for="homme">Homme</label><input type="radio" id="homme" name="genre"/>
+                    <label for="femme">Femme</label><input type="radio" id="femme" name="genre"/>
+                    <p>Message</p><textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div>
+                    <p>
+                        Photo</br>
+                        <label for="file"></label><input type="file" id="file"/>
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        <input type="checkbox" id="etudiant"/><label for="etudiant">Vous etes étudiant</label><br>
+                        <input type="checkbox" id="majeur"/><label for="majeur">Vous etes majeur</label>
+                    </p>
+                </div>
+                <div>
+                    <p><label for="date">Date de naissance</br></label> <input type="date" id="date"></p>
+                        
+                     <p><label for="temps">Temps d'arriver</br></label> <input type="time" id="temps"/></p>
+                     <p>
+                        <label for="faculte">Selectionner une faculté</label><br>
+                        <select  id="faculte">
+                            <option value="Math_info">Mathematique informatique</option>
+                        </select>
+                    </p>
+                </div>
+                <div>
+                    <label for="pass">Mot de passe</label><br>
+                    <input type="password" id="pass"/>
+                    <p>
+                        <input type="submit" value="Enregistrez"/>
+                        <input type="reset" value="reinitialiser">
+                    </p>    
+                </div>
+            </form>
+        </div>
+    </body>
 </html>
